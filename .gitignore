@@ -14,3 +14,5 @@ wheels/
 target/
 dbt_packages/
 logs/
+data/
+dev.duckdb

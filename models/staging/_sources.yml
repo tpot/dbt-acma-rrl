@@ -1,0 +1,10 @@
+sources:
+  - name: stg_rrl_site
+    description: |
+      SPECTRA site table.
+    schema: source
+    meta:
+      external_location: |
+        read_csv('{{ env_var("DBT_DATA_ROOT") }}/site.csv')
+    tables:
+      - name: stg_rrl_site
