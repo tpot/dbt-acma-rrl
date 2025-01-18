@@ -1,0 +1,23 @@
+extends: default
+rules:
+  # Forbid YAML document start marker, '---'
+  document-start:
+    present: false
+  # Require inside space for flow blocks
+  braces:
+    min-spaces-inside: 1
+    max-spaces-inside: 1
+  brackets:
+    min-spaces-inside: 1
+    max-spaces-inside: 1
+  # Indentation
+  indentation:
+    indent-sequences: true
+    spaces: 2
+  # Sometimes we like to add multiple spaces after a comma in order to line
+  # up a group of columns for readability.
+  commas:
+    max-spaces-after: -1
+  # Disable line-length checks - YMMV
+  line-length: disable
+  comments-indentation: disable
