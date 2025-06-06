@@ -38,3 +38,14 @@ sources:
         )
     tables:
       - name: stg_rrl_antenna
+  - name: stg_asmg_2012_gda94_l2
+    description: |
+      Definition of HCIS L2 geometry
+    schema: source
+    meta:
+      external_location: |
+        ST_Read(
+          '{{ env_var("DBT_DATA_ROOT") }}/ASMG_2012_GDA94_L2.shp'
+        )
+    tables:
+      - name: stg_asmg_2012_gda94_l2

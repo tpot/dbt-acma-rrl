@@ -1,0 +1,22 @@
+models:
+  - name: dim_hcis_l2
+    description: |
+      TODO
+    columns:
+      - name: hcis_l2_id
+        data_tests:
+          - unique
+          - not_null
+      - name: hcis_l2
+        data_tests:
+          - unique
+          - not_null
+      - name: hcis_l3
+        data_tests:
+          - not_null
+      - name: hcis_l4
+        data_tests:
+          - not_null
+      - name: geom
+        data_tests:
+          - not_null
