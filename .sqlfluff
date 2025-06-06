@@ -2,6 +2,9 @@
 dialect = duckdb
 templater = jinja
 
+[sqlfluff:indentation]
+indented_ctes = True
+
 [sqlfluff:rules:capitalisation.functions]
 capitalisation_policy = upper
 ignore_words = ST_Point
