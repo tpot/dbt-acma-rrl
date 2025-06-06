@@ -26,3 +26,15 @@ sources:
       formatter: oldstyle
     tables:
       - name: stg_rrl_device_details
+  - name: stg_rrl_antenna
+    description: |
+      SPECTRA antenna table.
+    schema: source
+    meta:
+      external_location: |
+        read_csv(
+          '{{ env_var("DBT_DATA_ROOT") }}/antenna.csv',
+          normalize_names=true
+        )
+    tables:
+      - name: stg_rrl_antenna
