@@ -1,0 +1,15 @@
+models:
+  - name: dim_location
+    description: |
+      TODO
+    columns:
+      - name: location_id
+        data_tests:
+          - unique
+          - not_null
+      - name: point_geom
+        data_tests:
+          - not_null
+      - name: state
+      - name: postcode
+      - name: elevation
