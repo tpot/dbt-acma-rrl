@@ -2,3 +2,22 @@ models:
   - name: stg_rrl_site
     description: |
       SPECTRA site table.
+    columns:
+      - name: site_id
+        data_tests:
+          - unique
+          - not_null
+      - name: point_geom
+        data_tests:
+          - not_null
+      - name: name
+        data_tests:
+          - not_null
+      - name: state
+      - name: licensing_area_id
+        data_tests:
+          - not_null
+      - name: postcode
+      - name: site_precision
+      - name: elevation
+      - name: hcis_l2
