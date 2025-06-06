@@ -1,0 +1,23 @@
+models:
+  - name: dim_frequency
+    description: |
+      Frequency dimension table holding various properties of the transmit
+      or receive frequency of an antenna.
+    columns:
+      - name: frequency_id
+        data_tests:
+          - unique
+          - not_null
+      - name: frequency
+        data_tests:
+          - not_null
+      - name: display
+        data_tests:
+          - not_null
+      - name: display_units
+        data_tests:
+          - not_null
+      - name: itu_band
+      - name: ieee_radar_band
+      - name: nato_old_band
+      - name: nato_new_band
