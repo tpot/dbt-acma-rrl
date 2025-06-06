@@ -11,3 +11,18 @@ sources:
         )
     tables:
       - name: stg_rrl_site
+  - name: stg_rrl_device_details
+    description: |
+      SPECTRA device details table.
+    schema: source
+    meta:
+      external_location: |
+        read_csv(
+          '{{ env_var("DBT_DATA_ROOT") }}/device_details.csv',
+          normalize_names=true,
+          types={'LICENCE_NO': 'VARCHAR'}
+        )
+      # Curly braces get confused for Jinja syntax by dbt
+      formatter: oldstyle
+    tables:
+      - name: stg_rrl_device_details
