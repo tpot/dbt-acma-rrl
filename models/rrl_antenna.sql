@@ -1,3 +1,3 @@
 {{ config(materialized='view') }}
 SELECT *
-FROM {{ ref('stg_rrl_site') }}
+FROM {{ ref('stg_rrl_antenna') }}
