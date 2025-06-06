@@ -2,7 +2,7 @@ WITH
 
     freq AS (
         SELECT DISTINCT frequency
-        FROM {{ ref('stg_rrl_device_details') }}
+        FROM {{ ref('rrl_device_details') }}
         WHERE frequency IS NOT NULL
     )
 
