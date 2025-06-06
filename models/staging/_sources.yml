@@ -5,6 +5,9 @@ sources:
     schema: source
     meta:
       external_location: |
-        read_csv('{{ env_var("DBT_DATA_ROOT") }}/site.csv')
+        read_csv(
+          '{{ env_var("DBT_DATA_ROOT") }}/site.csv',
+          normalize_names=true
+        )
     tables:
       - name: stg_rrl_site

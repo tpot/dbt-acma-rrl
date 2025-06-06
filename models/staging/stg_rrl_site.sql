@@ -1,6 +1,6 @@
 SELECT
     site_id,
-    name,
+    _name AS site_name,
     state,
     licensing_area_id,
     postcode,

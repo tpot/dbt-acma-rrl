@@ -10,7 +10,7 @@ models:
       - name: point_geom
         data_tests:
           - not_null
-      - name: name
+      - name: site_name
         data_tests:
           - not_null
       - name: state
